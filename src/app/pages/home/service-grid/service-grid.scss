@@ -1,0 +1,58 @@
+.cont {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.sect {
+    padding: 6rem 0;
+}
+
+.card {
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+.card:hover {
+    box-shadow: 5px 5px 30px rgba($color: #000000, $alpha: 0.2);
+}
+
+.icons {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+        font-size: 4rem;
+    }
+}
+
+.text {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.cardtitle{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.cardsubtitle{
+    color: var(--color-text-body); 
+
+}
+.title {
+    text-align: center;
+    font-size: 2.8rem;
+    width: 50%;
+    margin: 0 auto;
+    line-height: 1.2;
+}

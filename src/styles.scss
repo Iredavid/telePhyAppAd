@@ -1,5 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 /* Reset / basic styles */
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-straight/css/uicons-thin-straight.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +13,8 @@
     line-height: 1.6;
     color: #333;
     background: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   .container {
     width: 90%;
@@ -47,26 +52,31 @@
     background: #d62828;
     color: #fff;
   }
+  :root {
 
-  // _colors.scss
+  /* Primary Shades */
+  --color-primary-dark: #B71C1C;
+  --color-primary: #D62828;
+  --color-primary-light: #F55C5C;
+  --color-primary-xlight: #FDECEC;
 
-$color-primary-dark: #B71C1C;
-$color-primary: #D62828;
-$color-primary-light: #F55C5C;
-$color-primary-xlight: #FDECEC;
+  /* Secondary Shades */
+  --color-secondary: #F5F5F5;
+  --color-secondary-light: #FAFAFA;
 
-$color-secondary: #F5F5F5;
-$color-secondary-light: #FAFAFA;
+  /* Text Colors */
+  --color-text-dark: #333333;
+  --color-text-body: #626467;
+  --color-text-muted: #999999;
 
-$color-text-dark: #333333;
-$color-text-body: #555555;
-$color-text-muted: #999999;
+  /* Utility Colors */
+  --color-white: #FFFFFF;
+  --color-accent: #E63946;
+  --color-success: #2ECC71;
+  --color-info: #3498DB;
+  --color-border-light: #E0E0E0;
 
-$color-white: #FFFFFF;
-$color-accent: #E63946;
-$color-success: #2ECC71;
-$color-info: #3498DB;
-$color-border-light: #E0E0E0;
-
-$gradient-brand: linear-gradient(135deg, #D62828 0%, #F55C5C 100%);
-$gradient-accent: linear-gradient(135deg, #E63946 0%, #F1A9A0 100%);
+  /* Gradients */
+  --gradient-brand: linear-gradient(135deg, #D62828 0%, #F55C5C 100%);
+  --gradient-accent: linear-gradient(135deg, #E63946 0%, #F1A9A0 100%);
+  }
