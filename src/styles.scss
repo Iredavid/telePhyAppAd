@@ -11,7 +11,7 @@
   body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #0a043c;
     background: #fff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -78,6 +78,6 @@
   --color-border-light: #E0E0E0;
 
   /* Gradients */
-  --gradient-brand: linear-gradient(135deg, #D62828 0%, #F55C5C 100%);
+  --gradient-brand: linear-gradient(135deg, #B71C1C 0%, #F55C5C 100%);
   --gradient-accent: linear-gradient(135deg, #E63946 0%, #F1A9A0 100%);
   }
