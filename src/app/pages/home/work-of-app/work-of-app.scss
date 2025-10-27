@@ -21,18 +21,30 @@
 }
 
 .process-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display:flex;
   gap: 3rem;
+  justify-content: center;
+  flex-wrap: wrap;
+
+
   @media(max-width: 1200px) {
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1rem;
+    gap: 2rem;
 }
 }
 .process-card {
-  aspect-ratio: 1/1.3;
+  aspect-ratio: 1/1;
   transition: all 0.3s ease;
   position: relative;
+  flex: 1 1 250px; /* 👈 don’t shrink, don’t grow */
+  max-width: 100%;
+  @media(max-width: 991px) {
+    max-width: 300px;
+  }
+
+  @media(max-width: 564px) {
+    max-width: 100%;
+  }
+
 }
 
 .process-card:hover {
@@ -40,7 +52,6 @@
 }
 
 .process-icon {
-  height: 60%;
   width: 100%;
   display: flex;
   align-items: center;

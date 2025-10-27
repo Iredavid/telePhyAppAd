@@ -61,6 +61,10 @@
     flex-direction: column;
     gap: 4rem;
   }
+  @media(max-width: 570px) {
+    gap: 2rem;
+  }
+
 }
 
 .hero-text {
