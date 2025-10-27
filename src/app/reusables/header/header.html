@@ -1,6 +1,9 @@
 <header class="site-header">
     <div class="container">
+      <div class="logImg">
+      <img src="https://i.ibb.co/6cP7tcHg/telePhy.jpg" alt="">
       <a href="#" class="logo">TelePhysician</a>
+    </div>
       <nav class="site-nav">
         <ul>
           <li><a href="#home">Home</a></li>
@@ -8,8 +11,15 @@
           <li><a href="#services">Services</a></li>
           <li><a href="#pricing">Pricing</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact">Screenshots</a></li>
         </ul>
       </nav>
-      <a href="#get-started" class="btn btn-primary">Get Started</a>
+      <a href="#get-started" class="btn btn-primary gtbtn">Get Started</a>
+
+      <div class="hamburger" id="hamburger" (click)="active = !active" [class]="{ 'active': active }">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   </header>
