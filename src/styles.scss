@@ -103,6 +103,21 @@ a {
   background: #d62828;
   color: #fff;
 }
+.section-title {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 60px;
+  text-align: center;
+
+}
+.section-subtitle {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: center;
+}
 
 :root {
   --color-primary-dark: #9b1b1b;   /* Deep, warm red */

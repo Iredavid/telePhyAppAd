@@ -1,15 +1,17 @@
-body {
-    font-family: "Poppins", sans-serif;
-    background: linear-gradient(to bottom right, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
-    margin: 0;
-    padding: 0;
-    color: #333;
-  }
+
   
   .features-section {
     width: 100%;
     padding: 80px 0;
-    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, white 100%);
+    background-color: var(--gradient-accent);
+    // background: ;
+    background: url('https://i.ibb.co/6cRKyhh6/Gemini-Generated-Image-46wzk346wzk346wz.png') ;
+    background-size: cover;
+    background-repeat: no-repeat ;
+    background-position-y: -5%;
+    // <a href="https://ibb.co/XfZnWBBm"><img src="https://i.ibb.co/6cRKyhh6/Gemini-Generated-Image-46wzk346wzk346wz.png" alt="Gemini-Generated-Image-46wzk346wzk346wz" border="0"></a>
+    // <a href="https://imgbb.com/"><img src="https://i.ibb.co/9k1zTQzd/slazzer-preview-xm4hc.png" alt="slazzer-preview-xm4hc" border="0"></a>
+    // <a href="https://imgbb.com/"><img src="https://i.ibb.co/9k1zTQzd/slazzer-preview-xm4hc.png" alt="slazzer-preview-xm4hc" border="0"></a><a href="https://ibb.co/TDCkjmdL"><img src="https://i.ibb.co/fVc264Lv/Gemini-Generated-Image-nivkdnivkdnivkdn.png" alt="Gemini-Generated-Image-nivkdnivkdnivkdn" border="0"></a>
   }
   
   .features-container {
@@ -46,12 +48,12 @@ body {
     top: 30%;
     height: 40%;
     width: 4px;
-    background: linear-gradient(to bottom, #4c4cff, #8a2be2);
+    background: var(--gradient-brand);
     border-radius: 10px;
   }
   
   .feature-box.active::before {
-    background: linear-gradient(to bottom, #6c63ff, #b393ff);
+    background: var(--gradient-accent);
   }
   
   .feature-box h3 {
