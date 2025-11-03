@@ -108,7 +108,9 @@ a {
   font-weight: 800;
   margin-bottom: 60px;
   text-align: center;
-
+  @media(max-width: 563px) {
+    font-size: 1.8rem;
+  }
 }
 .section-subtitle {
   color: var(--color-primary);
@@ -124,7 +126,7 @@ a {
   --color-primary: #d62828;        /* Main red tone */
   --color-primary-light: #f04f4f;  /* Softer accent red */
   --color-primary-xlight: #f9b3b3; /* Gentle pastel tint */
-  --color-primary-xxlight: #fdecec;/* Very light background tint */
+  --color-primary-xxlight: #fdecec7a;/* Very light background tint */
   /* Primary Shades */
   // --color-primary-dark: #B71C1C;
   // --color-primary: #D62828;
@@ -151,4 +153,13 @@ a {
   /* Gradients */
   --gradient-brand: linear-gradient(135deg, #B71C1C 0%, #F55C5C 100%);
   --gradient-accent: linear-gradient(135deg, #E63946 0%, #F1A9A0 100%);
+}
+
+.webImage{
+  max-width: 400px;
+  border-radius: 40px;
+  object-fit: cover;
+  max-height: 600px;
+  @media(max-width: 992px) {
+  }
 }

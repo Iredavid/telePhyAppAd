@@ -16,16 +16,19 @@ export class Screenshots implements AfterViewInit {
   ngAfterViewInit() {
     Swiper.use([Autoplay, EffectCoverflow, Navigation]);
 
-    this.swiper = new Swiper(".appSwiper", {
+    this.swiper = new Swiper(".swiper", {
       effect: "coverflow",
-      // autoplay: true,
       grabCursor: true,
+      spaceBetween: 20,
       centeredSlides: true,
-      slidesPerView: 5,
+      slidesPerView: 3,
+      breakpoints: {
+        1200: {
+          slidesPerView: 4,
+        }
+      },
       coverflowEffect: {
-        rotate: 50,
         stretch: 0,
-        depth: 0,
         slideShadows: false,
       },
       loop: true,
@@ -33,6 +36,8 @@ export class Screenshots implements AfterViewInit {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
+      observer: true,
+      observeParents: true,
     });
   }
 

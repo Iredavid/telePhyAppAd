@@ -2,14 +2,20 @@
   
   .features-section {
     width: 100%;
-    padding: 80px 0;
+    padding: 100px 0;
     background-color: var(--gradient-accent);
     // background: ;
     background: url('https://i.ibb.co/6cRKyhh6/Gemini-Generated-Image-46wzk346wzk346wz.png') ;
     background-size: cover;
     background-repeat: no-repeat ;
-    background-position-y: -5%;
-    // <a href="https://ibb.co/XfZnWBBm"><img src="https://i.ibb.co/6cRKyhh6/Gemini-Generated-Image-46wzk346wzk346wz.png" alt="Gemini-Generated-Image-46wzk346wzk346wz" border="0"></a>
+    background-position: center top;
+    @media (max-width: 992px) {
+      background-position: center bottom;
+    }
+    @media (max-width: 480px) {
+     padding: 50px 0;
+    }
+      // <a href="https://ibb.co/XfZnWBBm"><img src="https://i.ibb.co/6cRKyhh6/Gemini-Generated-Image-46wzk346wzk346wz.png" alt="Gemini-Generated-Image-46wzk346wzk346wz" border="0"></a>
     // <a href="https://imgbb.com/"><img src="https://i.ibb.co/9k1zTQzd/slazzer-preview-xm4hc.png" alt="slazzer-preview-xm4hc" border="0"></a>
     // <a href="https://imgbb.com/"><img src="https://i.ibb.co/9k1zTQzd/slazzer-preview-xm4hc.png" alt="slazzer-preview-xm4hc" border="0"></a><a href="https://ibb.co/TDCkjmdL"><img src="https://i.ibb.co/fVc264Lv/Gemini-Generated-Image-nivkdnivkdnivkdn.png" alt="Gemini-Generated-Image-nivkdnivkdnivkdn" border="0"></a>
   }
@@ -19,9 +25,6 @@
     justify-content: center;
     align-items: center;
     gap: 60px;
-    max-width: 1200px;
-    margin: auto;
-    flex-wrap: wrap;
   }
   
   .features-column {
@@ -39,6 +42,10 @@
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
     position: relative;
     transition: all 0.3s ease;
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1)
+    }
   }
   
   .feature-box::before {
@@ -89,8 +96,8 @@
     }
   
     .phone-wrapper {
-      order: -1;
-      margin-bottom: 40px;
+      // order: -1;
+      // margin-bottom: 40px;
     }
   
     .features-column {
