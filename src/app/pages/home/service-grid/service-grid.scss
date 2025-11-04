@@ -29,7 +29,7 @@
 }
 
 .card:hover {
-    box-shadow: 5px 5px 50px var(--color-primary-xxlight);
+    box-shadow: 5px 5px 50px 10px var(--color-primary-xxlight);
 }
 
 .icons {
@@ -55,7 +55,7 @@
 .container {
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 4rem;
 }
 
 .cardtitle {

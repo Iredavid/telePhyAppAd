@@ -1,4 +1,4 @@
-<header class="site-header">
+<header class="site-header" [class.scrolled]="scrolled">
     <div class="container">
       <div class="logImg">
       <img src="https://i.ibb.co/6cP7tcHg/telePhy.jpg" alt="">
@@ -8,13 +8,13 @@
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#services">Testimonials</a></li>
+          <li><a href="#pricing">Features</a></li>
+          <li><a href="#contact">Process</a></li>
           <li><a href="#contact">Screenshots</a></li>
         </ul>
       </nav>
-      <a href="#get-started" class="btn btn-primary gtbtn">Get Started</a>
+      <a href="#get-started" class="btn btn-primary gtbtn">Contact Us</a>
 
       <div class="hamburger" id="hamburger" (click)="active = !active" [class]="{ 'active': active }">
         <span></span>

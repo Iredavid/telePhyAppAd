@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Hero } from './hero/hero';
 import { ServiceGrid } from './service-grid/service-grid';
-import { About } from '../about/about';
+import { About } from './about/about';
 import { WorkOfApp } from './work-of-app/work-of-app';
 import { FeatureAd } from './feature-ad/feature-ad';
 import { Testimonials } from './testimonials/testimonials';

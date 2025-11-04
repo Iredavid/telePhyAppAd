@@ -1,9 +1,9 @@
 <section class="testimonial-section">
   <div class="container">
-    <div class="testimonial-header">
+    <!-- <div class="testimonial-header"> -->
       <span class="section-subtitle">Clients Say</span>
       <h2 class="section-title">What Clients Think</h2>
-    </div>
+    <!-- </div> -->
     <div class="test-track">
       <div class="testimonial-box" [style.transform]="'translateX(' + (-currentTestimonial() * 100) + '%)'">
         @for (test of testimonials; track test) {
@@ -27,8 +27,9 @@
 
     <div class="testimonial-avatars">
       @for (test of testimonials; track test) {
-      <img [src]="test.img" alt="Client 1" class="avatar active" (click)="goToTestimonial($index)">
+      <img [src]="test.img" alt="Client 1" class="avatar" [class.active]="currentTestimonial() === $index" (click)="goToTestimonial($index)">
       }
     </div>
+
   </div>
 </section>

@@ -2,7 +2,8 @@
 /* Reset / basic styles */
 @import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-straight/css/uicons-thin-straight.css');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css');
 * {
   margin: 0;
   padding: 0;
@@ -36,7 +37,6 @@ body {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  // padding: 0 24px;
   box-sizing: border-box;
 
   @media (max-width: 1440px) {
@@ -84,6 +84,8 @@ a {
   padding: 12px 24px;
   border-radius: 6px;
   transition: background-color 0.3s;
+  border: none;
+  outline: none;
 }
 
 .btn-primary:hover {
@@ -152,7 +154,7 @@ a {
 
   /* Gradients */
   --gradient-brand: linear-gradient(135deg, #B71C1C 0%, #F55C5C 100%);
-  --gradient-accent: linear-gradient(135deg, #E63946 0%, #F1A9A0 100%);
+  --gradient-accent: linear-gradient(135deg, var(--color-primary)0%, var(--color-primary-xlight) 100%);
 }
 
 .webImage{
