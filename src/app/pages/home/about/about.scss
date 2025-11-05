@@ -23,10 +23,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  // background: var(--color-primary);
-  // border-radius: 1rem;
-  // margin-bottom: 30px;
-  // box-shadow: 0 10px 25px rgba(71, 66, 227, 0.2);
 }
 
 .about-app-image img {
@@ -55,6 +51,11 @@
 
 .section-subtitle {
   text-align: left;
+  text-transform: none;
+  @media(max-width: 992px) {
+    text-align: center;
+  }
+
 }
 
 .section-title {
@@ -66,7 +67,7 @@
   text-align: left;
 
   @media(max-width: 992px) {
-    text-align: left;
+    text-align: center;
   }
 
   @media(max-width: 563px) {
@@ -130,13 +131,23 @@
 
 .mat-expansion-panel-header-description {
   color: #0a043c;
-  font-weight: 700;
-  font-size: 18px;
+  font-size: 22px;
+  text-align: left;
+  @media(max-width: 548px){
+    font-size: 20px;
+  }
 }
 
 mat-expansion-panel {
   transition: all 0.3s ease !important;
+  border-radius: 10px !important;
 
+  p{
+    color: #555;
+    margin: 0;
+    font-size: 18px;
+    text-align: left;
+  }
 }
 
 .mat-expansion-panel:hover {
@@ -152,4 +163,16 @@ mat-expansion-panel {
 
 .mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:not([aria-disabled=true]):hover {
   background: none;
+}
+mat-panel-title{
+  color: var(--color-primary);
+  font-size: 1.5rem;
+}
+.faqs{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.mat-expansion-panel.mat-expanded {
+  background-color: var(--color-primary-xlight);
 }

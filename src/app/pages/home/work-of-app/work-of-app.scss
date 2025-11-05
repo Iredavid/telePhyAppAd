@@ -3,39 +3,66 @@
   padding: 100px 0;
 }
 
-
-
-
-
 .process-grid {
-  display:flex;
+  display: flex;
   gap: 3rem;
   justify-content: center;
   flex-wrap: wrap;
-  @media(max-width: 1400px) {
-    gap: 0;
+
+  @media(max-width: 1440px) {
+    height: 500px;
+    gap: 1rem;
   }
 
-
   @media(max-width: 1200px) {
-    gap: 3rem;
+    height: auto;
+  }
+
+  @media(max-width: 991px) {
+    gap: 2rem;
+  }
+
+  @media(max-width: 785px) {
+    gap: 1rem;
+
+  }
+
+  @media(max-width: 350px) {
+    gap: 2rem;
+  }
 }
-}
+
 .process-card {
   aspect-ratio: 1/1;
   transition: all 0.3s ease;
   position: relative;
-  flex: 1 1 250px; /* 👈 don’t shrink, don’t grow */
-  max-width: 100%;
+  flex: 1 1 300px;
+
+  @media(max-width: 1200px) {
+    max-width: 400px;
+  }
+
   @media(max-width: 991px) {
     max-width: 300px;
+    flex: 1 1 250px;
   }
 
-  @media(max-width: 580px) {
-    max-width: 100%;
-    aspect-ratio: 1.2/1;
+  @media(max-width: 785px) {
+    max-width: 250px;
+  }
+
+  @media(max-width: 579px) {
+    max-width: 250px;
+    aspect-ratio: 1/1.4;
 
   }
+
+  @media(max-width: 547px) {
+    max-width: none;
+    width: 100%;
+    aspect-ratio: 1/1;
+  }
+
 
 }
 
@@ -44,20 +71,18 @@
 }
 
 .process-icon {
-  max-width: fit-content;
-  height: fit-content;
+  width: 100%;
+  height: 60%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 2rem;
   margin: 0 auto;
 }
 
 .process-icon img {
-  width: 70%;
   height: 70%;
   object-fit: cover;
 }
@@ -75,7 +100,7 @@
 }
 
 .text {
-  height: 40%;
+  height: 50%;
   position: absolute;
   bottom: 0;
   padding: 1rem;
@@ -86,10 +111,14 @@
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 10px;
+
+  @media(max-width: 785px) {
+    font-size: 1.2rem;
+  }
 }
 
 .process-card p {
   color: #555;
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 1.7;
 }
