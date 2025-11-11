@@ -21,38 +21,31 @@ export class Screenshots implements AfterViewInit {
       grabCursor: true,
       spaceBetween: 20,
       centeredSlides: false,
-      slidesPerView: 1,
+      slidesPerView: 2,
       centerInsufficientSlides: true,
       breakpoints: {
-        480: {
+        250: {
           slidesPerView: 1,
           spaceBetween: 0,
           centeredSlides: true,
-          width: 350,
-          loop: true,
-          centerInsufficientSlides: true,
-
-
+          // width: 350,
+          // loop: true,
         },
-        785: {
+        485: {
           slidesPerView: 2,
           spaceBetween: 0,
           centeredSlides: true,
-          centerInsufficientSlides: true,
 
         },
-        991: {
+        785: {
           slidesPerView: 3,
           spaceBetween: 0,
           centeredSlides: true,
-          centerInsufficientSlides: true,
         },
-        1200: {
+        1024: {
           slidesPerView: 4,
           spaceBetween: 0,
           centeredSlides: true,
-          centerInsufficientSlides: true,
-
         },
         1600: {
           slidesPerView: 5,

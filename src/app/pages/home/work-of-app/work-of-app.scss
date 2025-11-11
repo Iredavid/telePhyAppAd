@@ -37,27 +37,24 @@
   transition: all 0.3s ease;
   position: relative;
   flex: 1 1 300px;
+  max-height: 450px;
 
   @media(max-width: 1200px) {
     max-width: 400px;
   }
 
-  @media(max-width: 991px) {
+  @media(max-width: 992px) {
     max-width: 300px;
-    flex: 1 1 250px;
-  }
-
-  @media(max-width: 785px) {
-    max-width: 250px;
-  }
-
-  @media(max-width: 579px) {
-    max-width: 250px;
-    aspect-ratio: 1/1.4;
+    aspect-ratio: 1/1.2;
 
   }
 
-  @media(max-width: 547px) {
+  @media(max-width: 648px) {
+    max-width: 260px;
+    aspect-ratio: 1/1.5;
+  }
+
+  @media(max-width: 568px) {
     max-width: none;
     width: 100%;
     aspect-ratio: 1/1;
@@ -72,7 +69,7 @@
 
 .process-icon {
   width: 100%;
-  height: 60%;
+  height: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,11 +77,29 @@
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto;
+
+  @media(max-width: 992px) {
+    height: 60%;
+  }
+
+  @media(max-width: 568px) {
+    height: 80%;
+  }
+
+  @media(max-width: 458px) {
+    height: 70%;
+  }
+
+  @media(max-width: 412px) {
+    height: 60%;
+  }
+
 }
 
 .process-icon img {
   height: 70%;
-  object-fit: cover;
+  width: 70%;
+  object-fit: contain;
 }
 
 .process-icon.purple {
@@ -100,7 +115,6 @@
 }
 
 .text {
-  height: 50%;
   position: absolute;
   bottom: 0;
   padding: 1rem;
@@ -119,6 +133,15 @@
 
 .process-card p {
   color: #555;
-  font-size: 1rem;
+  font-size: 15px;
   line-height: 1.7;
+
+  @media(max-width: 375px) {
+    font-size: 14px;
+  }
+
+  @media(max-width: 320px) {
+    font-size: 12px;
+  }
+
 }
